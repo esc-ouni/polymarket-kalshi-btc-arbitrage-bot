@@ -62,7 +62,7 @@ export default function Dashboard() {
 
   const fetchData = async () => {
     try {
-      const res = await fetch(`${API_URL}/arbitrage`)
+      const res = await fetch("/api/arbitrage")
       const json = await res.json()
       setData(json)
       setLastUpdated(new Date())

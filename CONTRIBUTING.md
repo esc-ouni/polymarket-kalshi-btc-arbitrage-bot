@@ -48,12 +48,13 @@ This section guides you through submitting an enhancement suggestion, including 
 
 ### Alternative: Docker Setup
 
-If you prefer using Docker, you can run the entire stack with a single command:
+If you prefer using Docker, you can run the entire stack with:
 ```bash
-docker compose -f docker/docker-compose.yml up --build
+make build
 ```
--   Backend will be available at `http://localhost:8000`
--   Frontend will be available at `http://localhost:3000`
+-   Dashboard will be available at `http://localhost:3000`
+-   Use `make logs` to view output, `make down` to stop
+
 
 ## 🎨 Styleguides
 

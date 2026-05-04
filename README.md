@@ -42,15 +42,17 @@ The easiest way to run the full application — no local Python or Node.js requi
 ```bash
 git clone https://github.com/CarlosIbCu/polymarket-kalshi-btc-arbitrage-bot.git
 cd polymarket-kalshi-btc-arbitrage-bot
-docker compose -f docker/docker-compose.yml up --build
+make build
 ```
 
-That's it! The dashboard will be available at `http://localhost:3000` and the API at `http://localhost:8000`.
+That's it! The dashboard will be available at `http://localhost:3000`.
 
-To stop the application:
+Other commands:
 ```bash
-docker compose -f docker/docker-compose.yml down
-```
+make up        # Start the application
+make down      # Stop the application
+make logs      # View logs
+make clean     # Remove everything (containers, images, volumes)
 
 ## 📦 Manual Installation
 
