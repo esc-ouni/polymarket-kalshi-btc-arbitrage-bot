@@ -46,6 +46,15 @@ This section guides you through submitting an enhancement suggestion, including 
     npm run dev
     ```
 
+### Alternative: Docker Setup
+
+If you prefer using Docker, you can run the entire stack with:
+```bash
+make build
+```
+-   Dashboard will be available at `http://localhost:3000`
+-   Use `make logs` to view output, `make down` to stop
+
 ## 🎨 Styleguides
 
 ### Python
